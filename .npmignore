@@ -2,10 +2,9 @@
 *.ts
 !*.d.ts
 
+# IDE
 .idea
 .vscode
 
 src
-build.sh
-
 .babelrc
