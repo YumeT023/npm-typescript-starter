@@ -18,7 +18,7 @@ In your `package.json` edit the following props:
 
 - **Everything is preconfigured. Feel free to edit them.**
 - Code Formatter and linter is fully configured using [Prettier](https://prettier.io/) and [Eslint](https://eslint.org). 
-- Testing is already set-up using [Jest](https://jestjs.io). You can find a _sample_ in [src/__tests__/sample.ts](https://github.com/YumeT023/npm-typescript-starter/blob/main/src/__tests__/sample.ts).
+- Testing is already set-up using [Jest](https://jestjs.io). You can find a _sample_ in [src/\_\_tests\_\_/sample.ts](https://github.com/YumeT023/npm-typescript-starter/blob/main/src/__tests__/sample.ts).
 - Scripts:
   - `clean>` Removes the previous build output.
   - `build>` Builds the project.
