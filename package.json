@@ -15,6 +15,9 @@
   "publishConfig": {
     "access": "public"
   },
+  "jest": {
+    "testRegex": "(/__tests__/.*?\\.(spec|test)\\.tsx?)$"
+  },
   "scripts": {
     "clean": "rm -rf lib/*",
     "build": "yarn run clean && tsc --p tsconfig.json",
