@@ -1,13 +1,7 @@
-test("passing test", () => {
-  console.log("passes!");
-});
+import {greet} from "../index";
 
-test("failing test", () => {
-  expect(() => {
-    throw new Error();
-  }).toThrow();
-});
-
-test("expect example", () => {
-  expect(5).toEqual(5);
+describe("Sample test", () => {
+  test("greets everyone", () => {
+    expect("Hello world").toBe(greet());
+  });
 });
