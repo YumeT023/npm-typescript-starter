@@ -1,7 +1,5 @@
-// Implement stuff
+export const greet = () => {
+  return "Hello world";
+};
 
-console.log(`
-
-  NPM TYPESCRIPT STARTER
-
-`);
+console.log(greet());
