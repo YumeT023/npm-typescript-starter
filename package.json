@@ -33,6 +33,8 @@
     "format": "prettier --ignore-path .gitignore --write \"src/**/*.{js,ts,tsx}\" \"./**/*.{json,yml,yaml}\""
   },
   "devDependencies": {
+    "@babel/preset-env": "^7.22.4",
+    "@babel/preset-typescript": "^7.21.5",
     "@rollup/plugin-commonjs": "^25.0.0",
     "@rollup/plugin-node-resolve": "^15.1.0",
     "@rollup/plugin-typescript": "^11.1.1",
