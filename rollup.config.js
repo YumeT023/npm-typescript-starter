@@ -1,4 +1,5 @@
 const resolve = require("@rollup/plugin-node-resolve").default;
+const babel = require("@rollup/plugin-babel").default;
 const commonjs = require("@rollup/plugin-commonjs").default;
 const typescript = require("@rollup/plugin-typescript").default;
 const dts = require("rollup-plugin-dts").default;
@@ -21,6 +22,9 @@ module.exports = [
       resolve(),
       commonjs(),
       typescript({tsconfig: "./tsconfig.build.json"}),
+      babel({
+        exclude: "node_modules/**",
+      }),
     ],
   },
   {
