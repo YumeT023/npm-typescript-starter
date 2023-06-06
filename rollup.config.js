@@ -26,6 +26,9 @@ module.exports = [
         exclude: "node_modules/**",
       }),
     ],
+    external: [
+      /node_modules/
+    ]
   },
   {
     input: "dist/dts/index.d.ts",
