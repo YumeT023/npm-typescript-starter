@@ -22,6 +22,7 @@ module.exports = [
       commonjs(),
       typescript({ tsconfig: "./tsconfig.build.json" }),
     ],
+    external: [/node_modules/]
   },
   {
     input: "dist/dts/index.d.ts",
