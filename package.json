@@ -1,14 +1,17 @@
 {
-  "name": "npm-starter",
-  "version": "1.0.0",
-  "description": "A project template for typescript npm packages",
-  "author": "yumii.saiko <yumii.saiko@gmail.com>",
-  "homepage": "https://github.com/YumeT023/npm-starter#readme",
-  "license": "MIT",
+  "name": "$pkg_name",
+  "version": "0.1.0",
+  "description": "$pkg_description",
+  "author": "$author",
+  "homepage": "https://github.com/YumeT023/$pkg_name#readme",
+  "license": "$license",
   "keywords": [],
+  "repository": {
+    "type": "github",
+    "url": "https://github.com/YumeT023/$pkg_name"
+  },
   "bugs": {
-    "url": "https://github.com/YumeT023/npm-starter/issues",
-    "email": "yumii.saiko@gmail.com"
+    "url": "https://github.com/YumeT023/$pkg_name/issues"
   },
   "publishConfig": {
     "access": "public"
@@ -16,17 +19,17 @@
   "jest": {
     "testRegex": "(/__tests__/.*?\\.(spec|test)\\.tsx?)$"
   },
-  "module": "dist/index.mjs",
-  "main": "dist/index.cjs",
-  "types": "dist/index.d.ts",
+  "module": "$out/index.mjs",
+  "main": "$out/index.cjs",
+  "types": "$out/index.d.ts",
   "files": [
-    "dist"
+    "$out"
   ],
   "scripts": {
     "build": "yarn clean && rollup -c && yarn clean-dts",
     "build-dts": "tsc -p tsconfig.build.json",
-    "clean": "rimraf dist",
-    "clean-dts": "rimraf dist/dts",
+    "clean": "rimraf $out",
+    "clean-dts": "rimraf $out/dts",
     "lint": "eslint --ignore-path .eslintignore --ext .ts .",
     "lint:fix": "yarn lint -- --fix",
     "test": "jest",

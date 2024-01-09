@@ -20,13 +20,13 @@ module.exports = [
     plugins: [
       resolve(),
       commonjs(),
-      typescript({ tsconfig: "./tsconfig.build.json" }),
+      typescript({tsconfig: "./tsconfig.build.json"}),
     ],
-    external: [/node_modules/]
+    external: [/node_modules/],
   },
   {
-    input: "dist/dts/index.d.ts",
-    output: [{ file: "dist/index.d.ts", format: "esm" }],
+    input: "$out/dts/index.d.ts",
+    output: [{file: "$out/index.d.ts", format: "esm"}],
     plugins: [dts()],
   },
 ];

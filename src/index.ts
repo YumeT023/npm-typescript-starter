@@ -1,5 +1,3 @@
-export const greet = () => {
-  return "Hello world";
+export const checkProject = () => {
+  return "$pkg_name works";
 };
-
-console.log(greet());

@@ -1,7 +1,7 @@
-import {greet} from "../index";
+import {checkProject} from "../index";
 
-describe("Sample test", () => {
-  test("greets everyone", () => {
-    expect("Hello world").toBe(greet());
+describe("$pkg_name", () => {
+  test("$pkg_description", () => {
+    expect("$pkg_name works").toBe(checkProject());
   });
 });

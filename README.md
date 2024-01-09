@@ -2,18 +2,13 @@
 
 A project template for typescript npm packages
 
-## 🛠 Package.json
+## 💉 Use this template
 
-In your `package.json` edit the following props:
+Prerequisites: [Proplate](https://github.com/YumeT023/proplate)
 
-- `*name`
-- `*version`
-- `description>` a short description about the purpose of your package
-- `author>` about you (_this option can be removed_)
-- `homepage>` most likely a webpage that include the documentation of your package (_if none exists, use your github README_)
-- `bugs`
-  - `url`
-  - `email`
+```shell
+proplate create --template https://github.com/YumeT023/npm-typescript-starter --dest output-dir
+```
 
 ## ✨ What does this template include ?
 
