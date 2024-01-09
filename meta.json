@@ -1,0 +1,52 @@
+{
+  "id": "npm-typescript-starter",
+  "args": [
+    {
+      "key": "pkg_name",
+      "label": "Package name",
+      "q_type": "Text",
+      "default_value": "dist"
+    },
+    {
+      "key": "pkg_description",
+      "label": "Package description",
+      "q_type": "Text"
+    },
+    {
+      "key": "author",
+      "q_type": "Text",
+      "label": "Author (name <email>)"
+    },
+    {
+      "key": "out",
+      "label": "Build output dir",
+      "q_type": "Text",
+      "default_value": "dist"
+    },
+    {
+      "key": "license",
+      "q_type": "Select",
+      "label": "Select package license",
+      "options": ["MIT", "UNLICENSED"]
+    }
+  ],
+  "additional_operations": [
+    {
+      "conditions": [
+        {
+          "lhs": "$license",
+          "op": "Eq",
+          "rhs": "MIT"
+        }
+      ],
+      "operations": [
+        {
+          "Copy": {
+            "file": ".proplate_aux_utils/MIT",
+            "dest": "LICENSE"
+          }
+        }
+      ]
+    }
+  ]
+}
